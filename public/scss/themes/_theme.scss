@@ -1,0 +1,359 @@
+/* Posts and pages
+--------------------------------------------- */
+.sticky {
+  display: block;
+}
+
+.post,
+.page {
+  margin: 0;
+}
+
+.updated:not(.published) {
+  display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+/* Comments
+--------------------------------------------- */
+.comment-content a {
+  word-wrap: break-word;
+}
+
+.bypostauthor {
+  display: block;
+}
+
+/* Media
+--------------------------------------------- */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+  display: inline-block;
+}
+
+/* Captions
+--------------------------------------------- */
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+  text-align: center;
+}
+
+/* Galleries
+--------------------------------------------- */
+/*.gallery {
+  margin-bottom: 1.5em;
+  display: grid;
+  grid-gap: 1.5em;
+}*/
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.gallery-columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-columns-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-columns-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.gallery-columns-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.gallery-columns-7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.gallery-columns-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.gallery-columns-9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.gallery-caption {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+
+/* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+  display: none;
+}
+
+/* Re-display the  Footer when Infinite Scroll has reached its end. */
+.infinity-end.neverending .site-footer {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Accessibility
+--------------------------------------------- */
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+
+  &:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: #21759b;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+  }
+}
+
+/* Do not show the outline on the skip link target. */
+#primary[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+/* Alignments
+--------------------------------------------- */
+.alignleft {
+
+  /*rtl:ignore*/
+  float: left;
+
+  /*rtl:ignore*/
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.alignright {
+
+  /*rtl:ignore*/
+  float: right;
+
+  /*rtl:ignore*/
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+}
+
+/*-----------------------------------------*/
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.sub-heading {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  line-height: 32px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-weight: 700;
+  line-height: 1.42857143;
+  color: #333333;
+  text-transform: capitalize;
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-family: $font_title;
+  position: relative;
+
+  @media (max-width: 736px) {
+    font-size: 2.6rem;
+  }
+}
+
+.section-title-type-2 {
+  font-weight: 600;
+  line-height: 1.42857143;
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 49px;
+  margin-bottom: 15px;
+  font-family: $font_secondary;
+  position: relative;
+
+  @media (max-width: 736px) {
+    font-size: 2.6rem;
+  }
+}
+
+.title-decoration:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  bottom: -5px;
+  width: 100px;
+  height: 3px;
+  background: #ce4649;
+  left: 50%;
+  margin-left: -50px;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.section-title a {
+  color: $primary_color;
+}
+
+.section-title-wrapper {
+  max-width: 750px;
+  margin: 0 auto 40px;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.color-primary {
+  color: $primary_color;
+}
+
+.btn-background-primary {
+  background: $primary_color;
+  color: $color_white;
+}
+
+.btn-background-primary:hover {
+  background: $secondary_color;
+  color: $color_white;
+}
+
+.btn {
+  font-size: 18px;
+  padding: 8px 22px;
+  border-radius: 4px;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle
+}
+
+.thin_layer {
+  bottom: 0;
+  height: 100%;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+/*------------------------*/
+.img_background {
+  background-position: 50%;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-color: #f1f1f1;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.border_img_overlay {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border: 1px solid #FFF;
+  background: transparent;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@media (min-width: 1400px) {
+
+  .container {
+    max-width: 1380px;
+  }
+}

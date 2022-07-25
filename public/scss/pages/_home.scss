@@ -1,0 +1,661 @@
+/*--------------------------------------------------------------
+## Banner Slider
+--------------------------------------------------------------*/
+.sahid-slider {
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+
+  .overlay_text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 99;
+    padding-top: 13%;
+    h2 {
+      font-size: 50px;
+      font-weight: 800;
+      color: #FFF;
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+    p {
+      text-align: center;
+      font-size: 12px;
+      color: #FFF;
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.banner-slider {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sahid-slider .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-image: linear-gradient(227deg, #691c0abf 0%, #43556CAF 100%);
+  opacity: 1;
+}
+
+.sahid-slider .owl-carousel .owl-nav {
+  margin: 0;
+}
+
+.sahid-slider .owl-carousel .owl-nav button.owl-next, .sahid-slider .owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  top: 45%;
+  opacity: 1;
+  transition: all 0.5s ease;
+  z-index: 99999;
+  font-size: 20px;
+  color: #FFF;
+  width: 30px;
+  background: #000;
+  border-radius: 50%;
+
+  outline: 0;
+}
+
+.sahid-slider .owl-carousel .owl-nav button.owl-prev {
+  left: 10px;
+}
+
+.sahid-slider .owl-carousel .owl-nav button.owl-next {
+  right: 10px;
+}
+
+.sahid-slider .owl-dots {
+  position: absolute;
+  bottom: 10px;
+  opacity: 1;
+  transition: all 0.5s ease;
+  outline: 0;
+  left: 0;
+  right: 0;
+}
+
+.sahid-services {
+  .box {
+    padding: 34px 30px;
+    z-index: 2;
+    background: #fff;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-bottom: 15px;
+    box-shadow: 10px 10px 18px -15px #0000005c;
+    border-radius: 0;
+    figure {
+      width: 80px;
+      margin: 0 auto;
+      margin-bottom: 5px;
+    }
+    h3 {
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+##  About section
+--------------------------------------------------------------*/
+.sahid-about .row > div {
+  align-self: center;
+}
+
+.sahid-about {
+  background: url("../images/about-bg.png");
+  background-size: cover;
+}
+
+.sahid-about .img_background {
+  min-height: 500px;
+}
+
+.sahid-about h2 {
+  font-weight: 500;
+  color: #FFF;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.sahid-about h3 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #cfa463;
+  font-weight: 400;
+}
+
+.sahid-about p {
+  font-size: 15px;
+  color: #FFF;
+}
+
+.sahid-about .address-info ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sahid-about .address-info ul li {
+  float: left;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  width: 49%;
+  color: #787878;
+  list-style-type: none;
+}
+
+.sahid-about .address-info ul li:before {
+  color: #787878;
+  content: "\f30b";
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  margin-right: 8px;
+  font-weight: 700;
+}
+
+.sahid-about .address-info ul li:last-child {
+  border-bottom: medium none;
+}
+
+.sahid-about span, .sahid-about .contact {
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFF;
+  margin-top: 22px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #b7b7b7;
+}
+
+.sahid-about .contact {
+  font-size: 22px;
+}
+
+.sahid-about .signature {
+  position: relative;
+  padding-left: 199px;
+}
+
+.sahid-about .signature .signature-img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.sahid-about .signature h4 {
+  position: relative;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  text-transform: capitalize;
+}
+
+.sahid-about .signature .designation {
+  position: relative;
+  color: #7a7a7a;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.sahid-about figure img {
+  /*-webkit-clip-path: polygon(17% 0, 100% 0%, 83% 100%, 0% 100%);
+  clip-path: polygon(17% 0, 100% 0%, 83% 100%, 0% 100%);*/
+  transition: all 0.3s ease;
+}
+
+.sahid-about figure:hover img {
+  transform: scale(1.02);
+}
+
+/*********************
+*    team
+***********************/
+.sahid-team, .sahid_team_layout_two {
+  width: 100%;
+  background: #f5f8f9;
+  display: block;
+}
+
+.sahid-team .box {
+  text-align: center;
+  margin-bottom: 15px;
+  background: #FFF;
+  padding-bottom: 15px;
+}
+
+.sahid-team .box h4 {
+  margin-bottom: 0;
+}
+
+.sahid-team .box h4 a {
+  color: #404040;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+
+.sahid-team .box span {
+  text-align: center;
+  display: block;
+  color: #ff9800;
+}
+
+.sahid-team .box figure {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 270px;
+  margin-bottom: 15px;
+}
+
+.sahid-team .box figure img {
+  transition: all ease 0.4s;
+}
+
+/*--------------------------------------------------------------
+##  Testimonial
+--------------------------------------------------------------*/
+.sahid_testimonial {
+  position: relative;
+  .section-title {
+    color: #FFF;
+  }
+}
+
+.sahid_testimonial .row > div {
+  align-self: center;
+}
+
+.sahid_testimonial .testimonial_inner {
+  background: #ffffff;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 15px;
+}
+
+.sahid_testimonial p {
+  color: #FFF;
+}
+
+.sahid_testimonial .testimonial_inner p {
+  color: #333;
+}
+
+.sahid_testimonial .testimonial_inner .testimonial_author {
+  margin-top: 20px;
+  padding-left: 65px;
+  position: relative;
+  display: inline-block;
+}
+
+.sahid_testimonial .testimonial_inner .author_image {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  border-radius: 999px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.sahid_testimonial .testimonial_inner h5 {
+  margin-bottom: 0;
+}
+
+.sahid_testimonial .testimonial_inner .testimonial_author p {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.sahid_testimonial .testimonial_inner i {
+  font-size: 150px;
+  color: #ededed;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+}
+
+.sahid_testimonial .owl-theme .owl-nav {
+  margin-top: 10px;
+  float: left;
+}
+
+.sahid_testimonial .owl-nav button.owl-next, .sahid_testimonial .owl-nav button.owl-prev {
+  color: #000;
+  font-size: 14px;
+  margin: 5px;
+  padding: 9px 9px 4px 6px !important;
+  background: #fff;
+  transition: all .4s ease 0s;
+  box-shadow: 0 5px 28px 0 rgba(50, 50, 50, 0.1);
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+  opacity: 1;
+  outline: 0;
+  bottom: -42px;
+}
+
+.sahid_testimonial .owl-nav .owl-prev {
+  right: 55px;
+}
+
+.sahid_testimonial .owl-nav .owl-next {
+  right: 0;
+}
+
+.sahid_testimonial .owl-nav i {
+  font-size: 30px;
+}
+
+/*---------------------------------------------------------------------------
+## Contact Deatil  button color
+-----------------------------------------------------------------------------*/
+.sahid_contact_detail.layout_two .contact_form .wpcf7 input[type="submit"] {
+  background-color: #cf9455;
+  border: 1px solid #cf9455;
+}
+
+.sahid_contact_detail.layout_two .contact_form .wpcf7 input[type="submit"]:hover {
+  background-color: #a16e37;
+  border: 1px solid #a16e37;
+}
+
+/*--------------------------------------------------------------
+##  Contact Detail
+--------------------------------------------------------------*/
+.sahid_contact_detail {
+  position: relative;
+  background: #ececec;
+}
+
+.sahid_contact_detail h2 {
+  color: #000;
+}
+
+.sahid_contact_detail p {
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.sahid_contact_detail .call-us {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 40px;
+  display: inline-block;
+  width: 100%;
+}
+
+.sahid_contact_detail .call-us i {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border: 1px solid #FFF;
+  background: #FFF;
+  text-align: center;
+  color: #0e62b1;
+  line-height: 46px;
+  margin-right: 15px;
+  border-radius: 3px;
+  float: left;
+}
+
+.sahid_contact_detail .contact_info_detail {
+  float: left;
+  width: calc(100% - 65px);
+  display: block;
+  color: #FFF;
+}
+
+.sahid_contact_detail .contact_info_detail h4 {
+  font-size: 20px;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0px;
+}
+
+.sahid_contact_detail .contact_info_detail span {
+  font-size: 15px;
+}
+
+.sahid_contact_detail .call-us.mail-us {
+  margin-bottom: 0px;
+}
+
+.sahid_contact_detail .contact_form .wpcf7 label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  width: 100%;
+}
+
+.sahid_contact_detail .contact_form .wpcf7 span {
+  width: 100%;
+}
+
+.sahid_contact_detail .contact_form .wpcf7 .wpcf7-textarea {
+  height: 200px;
+}
+
+.sahid_contact_detail .contact_form .wpcf7 p {
+  margin-bottom: 0;
+}
+
+.sahid_contact_detail .contact_form {
+  background-color: #ffffff;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  padding: 30px 50px;
+}
+
+.sahid_contact_detail .contact_form .wpcf7 input,
+.sahid_contact_detail .contact_form .wpcf7 .wpcf7-textarea {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-bottom: 15px;
+  color: #968c8c;
+  border: 1px solid #e5e5e5;
+  width: 100%;
+  padding: 15px 20px;
+
+}
+
+.sahid_contact_detail .contact_form .wpcf7 input {
+  height: 50px;
+}
+
+.sahid_contact_detail .contact_form .wpcf7 .wpcf7-textarea {
+  height: 150px;
+}
+
+.sahid_contact_detail .contact_form .wpcf7 input[type="submit"] {
+  display: inline-block;
+  font-weight: 400;
+  color: #FFF;
+  text-align: center;
+  padding: 8px 25px;
+  font-size: 16px;
+  border-radius: 0px;
+  transition: all .15s ease-in-out;
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
+  background-color: #e4353a;
+  border: 1px solid #e4353a;
+}
+
+.sahid_contact_detail .contact_form .wpcf7 input[type="submit"]:hover {
+  background-color: #cfa463;
+  border: 1px solid #cfa463;
+  opacity: 1;
+}
+
+.hot-line{
+  position: fixed;
+  bottom: 30px;
+  max-width: 300px;
+  display: flex;
+  background:#FFF;
+  align-items: center;
+  border-left:4px solid #e4353a;
+  z-index: 999;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  h3{
+    font-size: 20px;
+    color: #e4353a;
+    font-weight: 700;
+  }
+  .icon{
+    font-size: 40px;
+    color: #004e75;
+    padding: 0 14px;
+
+  }
+  .content{
+    padding: 15px 0;
+  }
+  p{
+    margin: 0;
+    line-height: 1;
+    font-weight: 400;
+  }
+}
+
+
+.latest_news {
+  position: relative;
+  padding: 90px 0 60px;
+  @media (max-width: 768px) {
+    padding: 60px 0 60px;
+  }
+  .outer-box {
+    padding: 0 15px;
+    position: relative;
+    overflow: hidden;
+  }
+  a {
+
+    &:hover {
+
+      .box {
+        transform: scale(1.2);
+        transition: all .5s;
+      }
+    }
+
+  }
+
+  .box {
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+    background-position: 50%;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-color: #f1f1f1;
+    background-size: cover;
+    transition: all .5s;
+    .box-overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 15px 15px;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 100%, rgba(255, 255, 255, 0) 0%);
+    }
+    h3 {
+      color: #fff;
+      font-size: 21px;
+      position: absolute;
+      bottom: 0;
+      line-height: 1.2;
+      font-family: $font_secondary;
+    }
+  }
+
+  .owl-carousel .owl-nav {
+    margin: 0;
+  }
+
+  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 45%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99999;
+    font-size: 20px;
+    color: #FFF;
+    width: 30px;
+    background: #000;
+    border-radius: 50%;
+    outline: 0;
+  }
+
+  .owl-carousel .owl-nav button.owl-prev {
+    left: 10px;
+  }
+
+  .owl-carousel .owl-nav button.owl-next {
+    right: 10px;
+  }
+
+  .owl-dots {
+    position: absolute;
+    bottom: 10px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    outline: 0;
+    left: 0;
+    right: 0;
+  }
+
+}
+
+
+.counter{
+  background: #f2f2f2;
+  .box{
+    padding: 34px 30px;
+    z-index: 2;
+    border-radius: 10px;
+    background: #f6f6f6;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-bottom: 15px;
+
+    figure{
+      width: 100px;
+      margin: 0 auto;
+    }
+    h3{
+      text-align: center;
+      color: #FFF;
+    }
+    .numWrapper{
+      text-align: center;
+      font-size: 26px;
+      color: #FFF;
+    }
+
+  }
+}

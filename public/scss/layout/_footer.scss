@@ -1,0 +1,179 @@
+/*--------------------------------------------------------------
+## Footer Widget
+--------------------------------------------------------------*/
+.site-footer {
+  background: #021c39;
+  color: #fff;
+}
+
+.upper-footer .row {
+  padding: 50px 0 20px 0;
+  position: relative;
+}
+
+.site-footer .widget {
+  margin: 2em 0;
+}
+
+.site-footer .widget .widget-title {
+  width: 100%;
+  margin-top: 0;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+  padding-bottom: 5px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/*.site-footer .widget .widget-title:before {
+    height: 3px;
+    content: "";
+    position: absolute;
+    width: 60px;
+    background: #e4353a;
+    bottom: 0;
+    left: 0;
+}
+
+.site-footer .widget .widget-title:after {
+    height: 3px;
+    content: "";
+    position: absolute;
+    width: 15px;
+    background: #fff;
+    bottom: 0;
+    left: 67px;
+}*/
+
+.site-footer .widget ul,
+.widget_tag_cloud .tagcloud {
+  padding: 0;
+  margin: 0 0 15px;
+}
+
+.site-footer .widget ul li {
+ margin-bottom: 0px;
+}
+
+.site-footer .widget ul li:last-child {
+  border: 0;
+}
+
+.site-footer .widget ul li,
+.site-footer .widget ul li a,
+.site-footer .widget a,
+.site-footer .widget ul li:before,
+.site-footer .widget a::before,
+.site-footer .calendar_wrap table td,
+.site-footer .calendar_wrap table th {
+  color: #FFF;
+  list-style-type: none;
+  font-size: 14px;
+}
+
+.site-footer .widget a:hover,
+.site-footer .widget a:hover::before,
+.site-footer .widget li:hover::before {
+  color: #FFF;
+}
+
+.site-footer .widget_recent_entries a {
+  padding-left: 15px;
+}
+
+
+.footer-main{
+  padding:60px 0;
+  background: url('../images/footer-bg.png');
+  background-size: cover;
+  background-position: top;
+}
+/*--------------------------------------------------------------
+## Sub Footer Copyright & Social Icon
+--------------------------------------------------------------*/
+.lower-footer {
+  position: relative;
+  background: rgb(0, 78, 117);
+  padding: 10px  0;
+  p{
+    margin: 0;
+    color: #FFF;
+  }
+}
+
+.lower-footer .row {
+
+  position: relative;
+}
+
+.lower-footer .row > div {
+  align-self: center;
+}
+
+.lower-footer ul.social-media {
+  text-align: center;
+
+  margin: 0;
+}
+
+.lower-footer ul li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 15px;
+  height: 26px;
+  color: #f6f5f5;
+}
+
+ul.links {
+  margin: 0 0 20px;
+  text-align: center;
+  li {
+    font-size: 16px;
+    a{
+      color: #c7c5c5;
+      font-size: 17px;
+      padding: 0 10px;
+    }
+  }
+}
+
+.copyright {
+  display: block;
+  margin: 0;
+  color: #FFF;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 30px 0;
+}
+
+.back-to-top {
+  background-color: #1d1d1d;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+  position: absolute;
+  z-index: 999;
+  left: calc(50% - 22.5px);
+  top: -22.5px;
+
+  transition: all 0.2s;
+  color: #cfa468;
+}
+
+.aboutwidget p{
+  color: #FFF;
+}
+
+footer h2{
+  font-size: 30px;
+color: #FFF;
+}
